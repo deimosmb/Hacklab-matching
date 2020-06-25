@@ -1,0 +1,46 @@
+section {
+  position: relative;
+}
+
+.skills-header{
+  color: hsl(0, 0%, 13%);
+  margin: 0;
+  padding: 0.5rem;
+}
+
+.compare-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-size: 0.9rem;
+  padding: 0 0.5rem 0 0.5rem;
+  &-header {
+    color: hsl(0, 0%, 0%);
+    font-weight: 500;
+    display: flex;
+    justify-content: space-between;
+  }
+  &-items {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: 0.5px solid rgb(197, 195, 195);
+    &-id {
+      color: hsl(275, 12%, 2%);
+    }
+    &-source {
+      color: hsl(275, 12%, 25%);
+    }
+  }
+  .compare-skills {
+    list-style-type: square;
+    color: hsl(275, 12%, 25%);
+    font-size: 0.8rem;
+    display:flex; 
+    padding-left: 1rem;
+    &-item {
+      padding-right: 2rem;
+      
+    }
+  }
+}

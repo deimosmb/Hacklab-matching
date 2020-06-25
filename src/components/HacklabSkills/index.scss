@@ -1,0 +1,61 @@
+form {
+  display: flex;
+  height: 3rem;
+  margin: 0.5rem;
+ 
+  div {
+    width: 100%;
+    display: flex;
+  }
+  input {
+    border-radius: 3px;
+    width: 100%;
+    font-size: 1rem;
+    border: none;
+    padding: 0.5rem 0 0.5rem 1rem;
+    background-color: hsl(275, 12%, 95%);
+  }
+}
+
+.filter_list {
+  list-style: none;
+  z-index: 1;
+  position: absolute;
+  top: 2.4rem;
+  right: 0;
+  border: none;
+  height: 0;
+  width: 100%;
+  background-color: white;
+  :nth-child(1){
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+  }
+  :last-child {
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+  }
+  > li {
+    padding: 1rem;
+    background-color: hsl(275, 12%, 95%);
+    color: hsl(0, 0%, 20%); 
+    margin: 0 0.5rem 0 0.5rem;
+    cursor: pointer;
+    &:hover {
+      background-color: hsl(275, 8%, 90%);
+    }
+  }
+}
+
+.skill-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  margin-left: 0.5rem;
+  > li {
+    padding: 0.75rem;
+    margin-bottom: 1.5rem;
+    border-left: 2px  hsl(275, 100%, 25%) solid;
+  }
+}
